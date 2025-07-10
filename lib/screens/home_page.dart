@@ -12,37 +12,20 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   @override
   Widget build(BuildContext context) {
-    final themeProvider = Provider.of<ThemeProvider>(context);
     return Scaffold(
-      body:Column(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const TitleTextWidget(
-            label: "This is the Tittle",
-
-            
-            ),
+          const TitleTextWidget(label: "This is the Tittle"),
           const SubtitlesTextWidget(
             label: "Hi, Again",
-             color: Colors.red,
-             fontSize: 50,
-             
-             ),
-             
-          SwitchListTile(
-            title:  Text(themeProvider.getIsDarkTheme ? "Dark Mode" : "Light Mode"),
-            value: themeProvider.getIsDarkTheme, 
-            onChanged: (value) {
-
-              themeProvider.setDarkTheme(themevalue: value);
-            }, 
-          )
+            color: Colors.red,
+            fontSize: 50,
+          ),
         ],
-      )
-
+      ),
     );
   }
 }
