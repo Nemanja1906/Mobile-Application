@@ -24,8 +24,7 @@ class AssetsManager {
 
   // Bag
   static String bagWish = "$bagImagesPath";
-  static String shoppingBasket = "$bagImagesPath";
-  static String shoppingCart = "$bagImagesPath";
+
   static String orderBag = "$bagImagesPath";
   static String orderSvg = "$bagImagesPath";
 
@@ -34,4 +33,6 @@ class AssetsManager {
   static String wishlist = "$bagImagesPath/wishlist.png";
   static String viewedRecently = "$bagImagesPath/viewedRecently.png";
   static String addressIcon = "$bagImagesPath/addressIcon.png";
+  static String shoppingCart = "$bagImagesPath/shoppingCart.jpg";
+  static String shoppingBasket = "$bagImagesPath/shoppingBasket.jpg";
 }
